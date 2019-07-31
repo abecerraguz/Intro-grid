@@ -1,0 +1,111 @@
+@import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
+
+* {
+  /*
+      ===content-box===
+      Este es el valor inicial y por defecto especificado por el estándar CSS. Las propiedades width and height no incluyen el borde, relleno o margen. Por ejemplo, .box {width: 350px; border: 10px solid black;} despliega una caja con un ancho de 370 pixeles.
+
+      ===border-box===
+      Las propiedad de width y height incluyen el contenido, relleno y borde pero no incluyen el margén.  properties include the content, padding, and border, but do not include the margin.
+      Las dimensiones del elemeno se calculan como: ancho = borde + relleno + ancho del contenido, y altura = borde + relleno + altura del contenido.
+
+  */
+  box-sizing:border-box;
+}
+
+body{
+  margin: 0px;
+  padding: 0px;
+  background: grey;
+  font-family: 'Open Sans', sans-serif;
+}
+
+body * {
+  margin: 0px;
+  padding: 0px;
+  border:0px;
+  border: 1px solid red;
+}
+
+h1,h3,p{
+  margin-bottom: 15px;
+}
+
+.container{
+  width: 60%;
+  height: auto;
+  overflow: hidden;
+  margin: 30px auto;
+  background: #bebebe;
+  padding: 20px;
+  border:1px solid rgb(85, 85, 85);
+
+}
+
+.row{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    padding: 20px;
+    border:1px solid blue;
+}
+
+.col-4{
+    width: 25%;
+    height: 150px;
+    border: 1px solid green;
+    background: #acacac;
+    float: left;
+    padding:15px;
+}
+
+.col-12{
+  width: 100%;
+  height: 150px;
+  border: 1px solid green;
+  background: #acacac;
+  float: none;
+  padding:15px;
+}
+
+.inline{
+  padding: 10px;
+}
+
+.inline li{
+  display: inline;
+}
+
+.rowContenedor{
+    width: 100%;
+    height: auto;
+    overflow: hidden;
+    display: block;
+    clear: both;
+    padding: 20px;
+    border:1px solid blue;
+    display: table;
+}
+
+.texto{
+  width: 50%;
+  height: auto;
+  display: table-cell;
+  vertical-align: middle;
+  padding: 0px 40px 0px 0px;
+}
+
+.imagen{
+  width: 50%;
+  height: auto;
+  display: table-cell;
+  vertical-align: middle;
+}
+
+.imagen img{
+  width: 100%;
+  height: 100%;
+  vertical-align: middle;
+}
