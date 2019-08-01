@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css?family=Open+Sans:400,700,800&display=swap');
 
+/* Inicio de la normalización */
 * {
   /*
       ===content-box===
@@ -14,28 +15,30 @@
 }
 
 body{
-  margin: 0px;
-  padding: 0px;
+  margin: 0;
+  padding: 0;
   background: grey;
   font-family: 'Open Sans', sans-serif;
 }
 
 body * {
-  margin: 0px;
-  padding: 0px;
-  border:0px;
+  margin:0;
+  padding:0;
+  border:0;
   border: 1px solid red;
 }
 
 h1,h3,p{
   margin-bottom: 15px;
 }
+/* Cierre de la normalización */
 
+/* Inicio del la grilla */
 .container{
   width: 60%;
   height: auto;
   overflow: hidden;
-  margin: 30px auto;
+  margin: 0 auto;
   background: #bebebe;
   padding: 20px;
   border:1px solid rgb(85, 85, 85);
@@ -57,7 +60,7 @@ h1,h3,p{
     height: 150px;
     border: 1px solid green;
     background: #acacac;
-    float: left;
+    float:right;
     padding:15px;
 }
 
@@ -69,13 +72,41 @@ h1,h3,p{
   float: none;
   padding:15px;
 }
+/* Cierre del la grilla */
+
+/* Section Box-sizing */
+.section-box-sizing{
+  width: 100%;
+  padding:30px 0;
+  overflow: hidden;
+  background: rgb(74, 122, 92);
+}
+
+/* Inicio Section display-inline */
+.section-display-inline{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  padding: 30px 0;
+  background: rgb(28, 106, 120);
+}
 
 .inline{
   padding: 10px;
 }
 
 .inline li{
-  display: inline;
+  display: inline-block;
+}
+/* Cierre section display-inline */
+
+/* Section Vertical-align */
+.section-vertical-align{
+  width: 100%;
+  height: auto;
+  overflow: hidden;
+  background: rgb(119, 153, 159);
+  padding:30px 0;
 }
 
 .rowContenedor{
@@ -89,7 +120,7 @@ h1,h3,p{
     display: table;
 }
 
-.texto{
+.rowContenedor-hijo-texto{
   width: 50%;
   height: auto;
   display: table-cell;
@@ -97,15 +128,17 @@ h1,h3,p{
   padding: 0px 40px 0px 0px;
 }
 
-.imagen{
+.rowContenedor-hijo-imagen{
   width: 50%;
   height: auto;
   display: table-cell;
   vertical-align: middle;
 }
 
-.imagen img{
+.rowContenedor-hijo-imagen img{
   width: 100%;
+  max-width: 100%
   height: 100%;
   vertical-align: middle;
 }
+/* Cierre Section Vertical-align */
